@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: UserService
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/microservices
+    username: root
+    password: Genpact@123456789
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+    hibernate:
+      ddl-auto: create # This will recreate tables on every application restart
+    show-sql: true
+
+server:
+  port: 2025
